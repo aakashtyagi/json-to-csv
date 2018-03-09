@@ -1,6 +1,15 @@
 import requests
 import csv
 
+"""
+The idea is to:
+1. Get the JSON data
+2. Simplify the JSON data (convert if nested)
+3. Write it into a csv
+
+"""
+
+
 
 """
 flattenjson(param1, param2):
@@ -36,7 +45,7 @@ def flattenjson(data, delim):
         value = '"'+','.join(value)+'"'
 
       val[key] = value
-      
+
   return val
 
 def main():
